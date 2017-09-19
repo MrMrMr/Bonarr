@@ -48,9 +48,9 @@ namespace NzbDrone.Core.MetadataSource.SkyHook
             _movieBuilder = requestBuilder.TMDB;
             _configService = configService;
             _movieService = movieService;
-            _predbService = predbService;
-            _exclusionService = exclusionService;
-            _altTitleService = altTitleService;
+            //_predbService = predbService;
+            //_exclusionService = exclusionService;
+            //_altTitleService = altTitleService;
             _radarrAPI = radarrAPI;
 
             _logger = logger;
@@ -479,7 +479,7 @@ namespace NzbDrone.Core.MetadataSource.SkyHook
                 .SetSegment("secondaryRoute", "")
                 .AddQueryParam("query", searchTerm)
                 .AddQueryParam("year", yearTerm)
-                .AddQueryParam("include_adult", false)
+                .AddQueryParam("include_adult", true)
                 .Build();
 
             request.AllowAutoRedirect = true;
