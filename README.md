@@ -1,71 +1,31 @@
 <p align="center">
-<img src="/Logo/text256.png" alt="Radarr">
+<img src="/Logo/text256.png" alt="Bonarr">
 </p>
 
-Radarr is an __independent__ fork of [Sonarr](https://github.com/Sonarr/Sonarr) reworked for automatically downloading movies via Usenet and BitTorrent.
+Bonarr is an __independent__ fork of [Radarr](https://github.com/Radarr/Radarr) reworked for automatically downloading adult movies via Usenet and BitTorrent.
 
-The project was inspired by other Usenet/BitTorrent movie downloaders such as CouchPotato.
+The project was inspired by Radarr's awesome ability to automate the process of downloading movies, but with a special twist: this time, you can automatically download adult movies to watch! Radarr has the ability to download adult movies found on TMDb, but many users began to complain that their kids could use it to download things they didn't want them to, or worse: automatic downloads could embarassingly show up in any automated system without some safeguards. 
+
+Bonarr will have zero restrictions on what content is downloaded, and we are going to re-work the core to include cool adult-oriented features such as fetish, categorization, and labels from popular adult API sources that will help you find and prefer specific movies or clips based on your preferences.
 
 ## Getting Started
 
-[![Installation](https://img.shields.io/badge/wiki-installation-brightgreen.svg?maxAge=60&style=flat-square)](https://github.com/Radarr/Radarr/wiki/Installation)
-[![Docker](https://img.shields.io/badge/wiki-docker-1488C6.svg?maxAge=60&style=flat-square)](https://github.com/Radarr/Radarr/wiki/Docker)
-[![Setup Guide](https://img.shields.io/badge/wiki-setup_guide-orange.svg?maxAge=60&style=flat-square)](https://github.com/Radarr/Radarr/wiki/Setup-Guide)
-[![FAQ](https://img.shields.io/badge/wiki-FAQ-BF55EC.svg?maxAge=60&style=flat-square)](https://github.com/Radarr/Radarr/wiki/FAQ)
-
-* [Install Radarr for your desired OS](https://github.com/Radarr/Radarr/wiki/Installation) *or* use [Docker](https://github.com/Radarr/Radarr/wiki/Docker)
-* *For Linux users*, run `radarr` and *optionally* have [Radarr start automatically](https://github.com/Radarr/Radarr/wiki/Autostart-on-Linux)
-* Connect to the UI through <http://localhost:7878> or <http://your-ip:7878> in your web browser
-* See the [Setup Guide](https://github.com/Radarr/Radarr/wiki/Setup-Guide) for further configuration
+Bonarr is currently exactly the same as Radarr. As we move forward with the project, this section will be updated to include specific usage instructions on how to configure Bonarr specific functionality. Setting up Bonarr is the same process as documented on [Radarr's Wiki](https://github.com/Radarr/Radarr/wiki/).
 
 ## Downloads
 
-[![GitHub Releases](https://img.shields.io/badge/downloads-releases-brightgreen.svg?maxAge=60&style=flat-square)](https://github.com/Radarr/Radarr/releases)
-[![AppVeyor Builds](https://img.shields.io/badge/downloads-continuous-green.svg?maxAge=60&style=flat-square)](https://ci.appveyor.com/project/galli-leo/radarr-usby1/branch/develop/artifacts)
-
-[![Docker release](https://img.shields.io/badge/docker-release-blue.svg?colorB=1488C6&maxAge=60&style=flat-square)](https://store.docker.com/community/images/linuxserver/radarr)
-[![Docker nightly](https://img.shields.io/badge/docker-release/nightly-blue.svg?colorB=1488C6&maxAge=60&style=flat-square)](https://store.docker.com/community/images/hotio/suitarr)
-[![Docker armhf](https://img.shields.io/badge/docker-armhf-blue.svg?colorB=1488C6&maxAge=60&style=flat-square)](https://store.docker.com/community/images/lsioarmhf/radarr)
-[![Docker aarch64](https://img.shields.io/badge/docker-aarch64-blue.svg?colorB=1488C6&maxAge=60&style=flat-square)](https://store.docker.com/community/images/lsioarmhf/radarr-aarch64)
-
-## Support
-
-[![Discord](https://img.shields.io/badge/discord-chat-7289DA.svg?maxAge=60&style=flat-square)](https://discord.gg/AD3UP37)
-[![Reddit](https://img.shields.io/badge/reddit-discussion-FF4500.svg?maxAge=60&style=flat-square)](https://www.reddit.com/r/radarr)
-[![Feathub](https://img.shields.io/badge/feathub-requests-lightgrey.svg?maxAge=60&style=flat-square)](http://feathub.com/Radarr/Radarr)
-[![GitHub](https://img.shields.io/badge/github-issues-red.svg?maxAge=60&style=flat-square)](https://github.com/Radarr/Radarr/issues)
-[![GitHub Wiki](https://img.shields.io/badge/github-wiki-181717.svg?maxAge=60&style=flat-square)](https://github.com/Radarr/Radarr/wiki)
-
-## Status
-
-[![GitHub issues](https://img.shields.io/github/issues/radarr/radarr.svg?maxAge=60&style=flat-square)](https://github.com/Radarr/Radarr/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/radarr/radarr.svg?maxAge=60&style=flat-square)](https://github.com/Radarr/Radarr/pulls)
-[![GNU GPL v3](https://img.shields.io/badge/license-GNU%20GPL%20v3-blue.svg?maxAge=60&style=flat-square)](http://www.gnu.org/licenses/gpl.html)
-[![Copyright 2010-2017](https://img.shields.io/badge/copyright-2017-blue.svg?maxAge=60&style=flat-square)](https://github.com/Radarr/Radarr)
-[![Github Releases](https://img.shields.io/github/downloads/Radarr/Radarr/total.svg?maxAge=60&style=flat-square)](https://github.com/Radar/Radarr/releases/latest)
-[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/radarr.svg?maxAge=60&style=flat-square)](https://hub.docker.com/r/linuxserver/radarr/)
-
-| Service  | Master                      | Develop                      |
-|----------|:---------------------------:|:----------------------------:|
-| AppVeyor | [![AppVeyor](https://img.shields.io/appveyor/ci/galli-leo/Radarr/master.svg?maxAge=60&style=flat-square)](https://ci.appveyor.com/project/galli-leo/Radarr) | [![AppVeyor](https://img.shields.io/appveyor/ci/galli-leo/Radarr-usby1/develop.svg?maxAge=60&style=flat-square)](https://ci.appveyor.com/project/galli-leo/Radarr-usby1) |
-| Travis   | [![Travis](https://img.shields.io/travis/Radarr/Radarr/master.svg?maxAge=60&style=flat-square)](https://travis-ci.org/Radarr/Radarr) | [![Travis](https://img.shields.io/travis/Radarr/Radarr/develop.svg?maxAge=60&style=flat-square)](https://travis-ci.org/Radarr/Radarr) |
-
-Radarr is currently undergoing rapid development and pull requests are actively added into the repository.
+[![GitHub Releases](https://img.shields.io/badge/downloads-releases-brightgreen.svg?maxAge=60&style=flat-square)](https://github.com/djzeratul/Bonarr/releases)
 
 ## Features
 
 ### Current Features
 
-* Adding new movies with lots of information, such as trailers, ratings, etc.
 * Support for major platforms: Windows, Linux, macOS, Raspberry Pi, etc.
-* Can watch for better quality of the movies you have and do an automatic upgrade. *eg. from DVD to Blu-Ray*
 * Automatic failed download handling will try another release if one fails
 * Manual search so you can pick any release or to see why a release was not downloaded automatically
 * Full integration with SABnzbd and NZBGet
 * Automatically searching for releases as well as RSS Sync
 * Automatically importing downloaded movies
-* Recognizing Special Editions, Director's Cut, etc.
-* Identifying releases with hardcoded subs
 * All indexers supported by Sonarr also supported
 * New PassThePopcorn Indexer
 * QBittorrent, Deluge, rTorrent, Transmission and uTorrent download client (Other clients are coming)
@@ -78,16 +38,15 @@ Radarr is currently undergoing rapid development and pull requests are actively 
 
 ### Planned Features
 
-* Downloading Metadata such as trailers or subtitles (\*)
-* Adding metadata such as posters and information for Kodi and others to use (\*)
-* Dynamically renaming folders with quality info, etc. (\*)
-* Supporting custom folder structures, such as all movie files in one folder (\*)
-* Supporting multiple editions per movies (waiting on The Movie Database to finish their implementation)
-* Supporting collections of movies, such as James Bond
+* Supporting custom folder structures, such as sort by category subfolder (\*)
+* Category view, to help organize movies into discernable categories.
+* Movie sets, for adult movies with many sequels.
+* Fetish preferences, for documented fetishes on adult movie API sites.
+* 
 
-**Note:** All features marked with (\*) are set to be in the first release of Radarr.
+**Note:** All features marked with (\*) are set to be in the first release of Bonarr.
 
-#### [Feature Requests](http://feathub.com/Radarr/Radarr)
+#### [Feature Requests](http://feathub.com/djzeratul/Bonarr)
 
 ## Configuring the Development Environment
 
