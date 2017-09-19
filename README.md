@@ -1,5 +1,5 @@
 <p align="center">
-<img src="/Logo/text256.png" alt="Bonarr">
+<img src="/Logo/bonarr256.png" alt="Bonarr">
 </p>
 
 Bonarr is an __independent__ fork of [Radarr](https://github.com/Radarr/Radarr) reworked for automatically downloading adult movies via Usenet and BitTorrent.
