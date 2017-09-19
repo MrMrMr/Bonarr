@@ -18,7 +18,7 @@ namespace NzbDrone.Core.Notifications.Email
 
         public override void OnGrab(GrabMessage grabMessage)
         {
-            const string subject = "Radarr [Movie] - Grabbed";
+            const string subject = "Bonarr[Movie] - Grabbed";
             var body = string.Format("{0} sent to queue.", grabMessage.Message);
 
             _emailService.SendEmail(Settings, subject, body);
@@ -26,7 +26,7 @@ namespace NzbDrone.Core.Notifications.Email
 
         public override void OnDownload(DownloadMessage message)
         {
-            const string subject = "Radarr [Movie] - Downloaded";
+            const string subject = "Bonarr[Movie] - Downloaded";
             var body = string.Format("{0} Downloaded and sorted.", message.Message);
 
             _emailService.SendEmail(Settings, subject, body);

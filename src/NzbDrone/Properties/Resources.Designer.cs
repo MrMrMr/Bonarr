@@ -47,7 +47,7 @@ namespace NzbDrone.Properties {
             }
         }
         
-        internal static System.Drawing.Icon Radarr {
+        internal static System.Drawing.Icon Radarr{
             get {
                 object obj = ResourceManager.GetObject("Radarr", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
