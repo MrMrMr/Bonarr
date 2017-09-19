@@ -25,7 +25,7 @@ namespace NzbDrone.Common
 
     public class ServiceProvider : IServiceProvider
     {
-        public const string NZBDRONE_SERVICE_NAME = "Radarr";
+        public const string NZBDRONE_SERVICE_NAME = "Bonarr";
 
         private readonly IProcessProvider _processProvider;
         private readonly Logger _logger;
@@ -78,7 +78,7 @@ namespace NzbDrone.Common
             serviceInstaller.Context = context;
             serviceInstaller.DisplayName = serviceName;
             serviceInstaller.ServiceName = serviceName;
-            serviceInstaller.Description = "Radarr Application Server";
+            serviceInstaller.Description = "Bonarr Application Server";
             serviceInstaller.StartType = ServiceStartMode.Automatic;
             serviceInstaller.ServicesDependedOn = new[] { "EventLog", "Tcpip", "http" };
 

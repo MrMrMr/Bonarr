@@ -1,4 +1,4 @@
-using NzbDrone.Common.EnvironmentInfo;
+﻿using NzbDrone.Common.EnvironmentInfo;
 
 namespace NzbDrone.Common.Http
 {
@@ -9,11 +9,11 @@ namespace NzbDrone.Common.Http
 
         static UserAgentBuilder()
         {
-            UserAgent = string.Format("Radarr/{0} ({1} {2})",
+            UserAgent = string.Format("Bonarr/{0} ({1} {2})",
                 BuildInfo.Version,
                 OsInfo.Os, OsInfo.Version.ToString(2));
 
-            UserAgentSimplified = string.Format("Radarr/{0}",
+            UserAgentSimplified = string.Format("Bonarr/{0}",
                 BuildInfo.Version.ToString(2));
         }
     }

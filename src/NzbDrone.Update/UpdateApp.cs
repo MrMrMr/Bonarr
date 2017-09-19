@@ -36,7 +36,7 @@ namespace NzbDrone.Update
                 var startupArgument = new StartupContext(args);
                 NzbDroneLogger.Register(startupArgument, true, true);
 
-                Logger.Info("Starting Radarr Update Client");
+                Logger.Info("Starting Bonarr Update Client");
 
                 _container = UpdateContainerBuilder.Build(startupArgument);
 

@@ -5,9 +5,9 @@ using NzbDrone.Common.EnvironmentInfo;
 using NzbDrone.Core.Configuration;
 using NzbDrone.Core.Lifecycle;
 using NzbDrone.Core.Messaging.Events;
-using Radarr.Host.Owin;
+using Bonarr.Host.Owin;
 
-namespace Radarr.Host
+namespace Bonarr.Host
 {
     public interface INzbDroneServiceFactory
     {

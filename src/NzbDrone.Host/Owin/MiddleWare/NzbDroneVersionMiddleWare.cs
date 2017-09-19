@@ -4,7 +4,7 @@ using Microsoft.Owin;
 using NzbDrone.Common.EnvironmentInfo;
 using Owin;
 
-namespace Radarr.Host.Owin.MiddleWare
+namespace Bonarr.Host.Owin.MiddleWare
 {
     public class NzbDroneVersionMiddleWare : IOwinMiddleWare
     {

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Linq;
 using System.Collections.Generic;
 using NzbDrone.Common.Disk;
@@ -33,12 +33,12 @@ namespace NzbDrone.Core.Download.Clients.QBittorrent
 
         protected override string AddFromMagnetLink(RemoteEpisode remoteEpisode, string hash, string magnetLink)
         {
-            throw new DownloadClientException("Episodes are not working with Radarr");
+            throw new DownloadClientException("Episodes are not working with Bonarr");
         }
 
         protected override string AddFromTorrentFile(RemoteEpisode remoteEpisode, string hash, string filename, Byte[] fileContent)
         {
-            throw new DownloadClientException("Episodes are not working with Radarr");
+            throw new DownloadClientException("Episodes are not working with Bonarr");
         }
 
         protected override string AddFromMagnetLink(RemoteMovie remoteMovie, string hash, string magnetLink)
@@ -204,7 +204,7 @@ namespace NzbDrone.Core.Download.Clients.QBittorrent
                     return new NzbDroneValidationFailure("TvCategory", "Category is recommended")
                     {
                         IsWarning = true,
-                        DetailedDescription = "Radarr will not attempt to import completed downloads without a category."
+                        DetailedDescription = "Bonarr will not attempt to import completed downloads without a category."
                     };
                 }
 
@@ -214,7 +214,7 @@ namespace NzbDrone.Core.Download.Clients.QBittorrent
                 {
                     return new NzbDroneValidationFailure(String.Empty, "qBittorrent is configured to remove torrents when they reach their Share Ratio Limit")
                     {
-                        DetailedDescription = "Radarr will be unable to perform Completed Download Handling as configured. You can fix this in qBittorrent ('Tools -> Options...' in the menu) by changing 'Options -> BitTorrent -> Share Ratio Limiting' from 'Remove them' to 'Pause them'."
+                        DetailedDescription = "Bonarr will be unable to perform Completed Download Handling as configured. You can fix this in qBittorrent ('Tools -> Options...' in the menu) by changing 'Options -> BitTorrent -> Share Ratio Limiting' from 'Remove them' to 'Pause them'."
                     };
                 }
             }

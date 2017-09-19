@@ -39,12 +39,12 @@ namespace NzbDrone.Core.Download.Clients.RTorrent
 
         protected override string AddFromMagnetLink(RemoteEpisode remoteEpisode, string hash, string magnetLink)
         {
-            throw new DownloadClientException("Episodes are not working with Radarr");
+            throw new DownloadClientException("Episodes are not working with Bonarr");
         }
 
         protected override string AddFromTorrentFile(RemoteEpisode remoteEpisode, string hash, string filename, byte[] fileContent)
         {
-            throw new DownloadClientException("Episodes are not working with Radarr");
+            throw new DownloadClientException("Episodes are not working with Bonarr");
         }
 
         protected override string AddFromMagnetLink(RemoteMovie remoteMovie, string hash, string magnetLink)
@@ -83,7 +83,7 @@ namespace NzbDrone.Core.Download.Clients.RTorrent
 
         public override string Name => "rTorrent";
 
-        public override ProviderMessage Message => new ProviderMessage("Radarr is unable to remove torrents that have finished seeding when using rTorrent", ProviderMessageType.Warning);
+        public override ProviderMessage Message => new ProviderMessage("Bonarr is unable to remove torrents that have finished seeding when using rTorrent", ProviderMessageType.Warning);
 
         public override IEnumerable<DownloadClientItem> GetItems()
         {

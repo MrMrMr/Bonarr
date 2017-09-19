@@ -34,7 +34,7 @@ namespace NzbDrone.Core.Download.Clients.Blackhole
 
         protected override string AddFromNzbFile(RemoteEpisode remoteEpisode, string filename, byte[] fileContents)
         {
-            throw new DownloadClientException("Episodes are not working with Radarr");
+            throw new DownloadClientException("Episodes are not working with Bonarr");
         }
 
         protected override string AddFromNzbFile(RemoteMovie remoteMovie, string filename, byte[] fileContents)
@@ -65,7 +65,7 @@ namespace NzbDrone.Core.Download.Clients.Blackhole
                 {
                     DownloadClient = Definition.Name,
                     DownloadId = Definition.Name + "_" + item.DownloadId,
-                    Category = "Radarr",
+                    Category = "Bonarr",
                     Title = item.Title,
 
                     TotalSize = item.TotalSize,

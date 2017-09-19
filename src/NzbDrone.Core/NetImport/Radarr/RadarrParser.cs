@@ -1,4 +1,4 @@
-﻿﻿using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using NzbDrone.Core.NetImport.Exceptions;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using NzbDrone.Core.MetadataSource;
 using NzbDrone.Core.MetadataSource.RadarrAPI;
 using NzbDrone.Common.Http;
 
-namespace NzbDrone.Core.NetImport.Radarr
+namespace NzbDrone.Core.NetImport.Bonarr
 {
     public class RadarrParser : IParseNetImportResponse
     {

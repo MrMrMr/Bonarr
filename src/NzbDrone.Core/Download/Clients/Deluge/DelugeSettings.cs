@@ -40,7 +40,7 @@ namespace NzbDrone.Core.Download.Clients.Deluge
         [FieldDefinition(3, Label = "Password", Type = FieldType.Password)]
         public string Password { get; set; }
 
-        [FieldDefinition(4, Label = "Category", Type = FieldType.Textbox, HelpText = "Adding a category specific to Radarr avoids conflicts with unrelated downloads, but it's optional")]
+        [FieldDefinition(4, Label = "Category", Type = FieldType.Textbox, HelpText = "Adding a category specific to Bonarr avoids conflicts with unrelated downloads, but it's optional")]
         public string MovieCategory { get; set; }
 
         [FieldDefinition(5, Label = "Use SSL", Type = FieldType.Checkbox)]

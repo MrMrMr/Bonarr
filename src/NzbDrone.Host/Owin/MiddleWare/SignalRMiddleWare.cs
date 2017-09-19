@@ -1,10 +1,10 @@
-using System;
+﻿using System;
 using Microsoft.AspNet.SignalR;
 using NzbDrone.Common.Composition;
 using NzbDrone.SignalR;
 using Owin;
 
-namespace Radarr.Host.Owin.MiddleWare
+namespace Bonarr.Host.Owin.MiddleWare
 {
     public class SignalRMiddleWare : IOwinMiddleWare
     {

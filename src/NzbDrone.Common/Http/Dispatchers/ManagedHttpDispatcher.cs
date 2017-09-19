@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Net;
 using NzbDrone.Common.EnvironmentInfo;
 using NzbDrone.Common.Extensions;
@@ -136,7 +136,7 @@ namespace NzbDrone.Common.Http.Dispatchers
                         webRequest.TransferEncoding = header.Value;
                         break;
                     case "User-Agent":
-                        throw new NotSupportedException("User-Agent other than Radarr not allowed.");
+                        throw new NotSupportedException("User-Agent other than Bonarr not allowed.");
                     case "Proxy-Connection":
                         throw new NotImplementedException();
                     default:

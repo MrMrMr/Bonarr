@@ -2,7 +2,7 @@
 using Nancy.Owin;
 using Owin;
 
-namespace Radarr.Host.Owin.MiddleWare
+namespace Bonarr.Host.Owin.MiddleWare
 {
     public class NancyMiddleWare : IOwinMiddleWare
     {

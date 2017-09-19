@@ -1,4 +1,4 @@
-﻿namespace Radarr.Host
+﻿namespace Bonarr.Host
 {
     public interface IUserAlert
     {

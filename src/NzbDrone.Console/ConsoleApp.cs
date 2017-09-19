@@ -3,7 +3,7 @@ using System.Net.Sockets;
 using NLog;
 using NzbDrone.Common.EnvironmentInfo;
 using NzbDrone.Common.Instrumentation;
-using Radarr.Host;
+using Bonarr.Host;
 
 namespace NzbDrone.Console
 {

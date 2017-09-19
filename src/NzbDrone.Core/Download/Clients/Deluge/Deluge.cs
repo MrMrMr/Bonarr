@@ -61,12 +61,12 @@ namespace NzbDrone.Core.Download.Clients.Deluge
 
         protected override string AddFromMagnetLink(RemoteEpisode remoteEpisode, string hash, string magnetLink)
         {
-            throw new DownloadClientException("Episodes are not working with Radarr");
+            throw new DownloadClientException("Episodes are not working with Bonarr");
         }
 
         protected override string AddFromTorrentFile(RemoteEpisode remoteEpisode, string hash, string filename, byte[] fileContent)
         {
-            throw new DownloadClientException("Episodes are not working with Radarr");
+            throw new DownloadClientException("Episodes are not working with Bonarr");
         }
 
         public override string Name => "Deluge";
@@ -256,7 +256,7 @@ namespace NzbDrone.Core.Download.Clients.Deluge
                 {
                     return new NzbDroneValidationFailure("MovieCategory", "Configuration of label failed")
                     {
-                        DetailedDescription = "Radarr as unable to add the label to Deluge."
+                        DetailedDescription = "Bonarr was unable to add the label to Deluge."
                     };
                 }
             }

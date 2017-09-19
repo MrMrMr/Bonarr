@@ -27,7 +27,7 @@ namespace NzbDrone.Api.Calendar
 
             Get["/NzbDrone.ics"] = options => GetCalendarFeed();
             Get["/Sonarr.ics"] = options => GetCalendarFeed();
-            Get["/Radarr.ics"] = options => GetCalendarFeed();
+            Get["/Bonarr.ics"] = options => GetCalendarFeed();
         }
 
         private Response GetCalendarFeed()
@@ -83,7 +83,7 @@ namespace NzbDrone.Api.Calendar
             var movies = _movieService.GetMoviesBetweenDates(start, end, unmonitored);
             var calendar = new Ical.Net.Calendar
             {
-                ProductId = "-//radarr.video//Radarr//EN"
+                ProductId = "-//radarr.video//Bonarr//EN"
             };
 
             foreach (var movie in movies.OrderBy(v => v.Added))

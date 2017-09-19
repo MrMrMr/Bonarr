@@ -6,7 +6,7 @@ using NzbDrone.Core.Validation;
 using System.Text.RegularExpressions;
 using NzbDrone.Core.MetadataSource.RadarrAPI;
 
-namespace NzbDrone.Core.NetImport.Radarr
+namespace NzbDrone.Core.NetImport.Bonarr
 {
 
     public class RadarrSettingsValidator : AbstractValidator<RadarrSettings>
@@ -27,10 +27,10 @@ namespace NzbDrone.Core.NetImport.Radarr
             Path = "";
         }
 
-        [FieldDefinition(0, Label = "Radarr API URL", HelpText = "Link to to Radarr API URL. Use https://staging.api.radarr.video if you are on nightly.")]
+        [FieldDefinition(0, Label = "Bonarr API URL", HelpText = "Link to to Bonarr API URL. Use https://staging.api.radarr.video if you are on nightly.")]
         public string APIURL { get; set; }
 
-        [FieldDefinition(1, Label = "Path to list", HelpText = "Path to the list proxied by the Radarr API. Check the wiki for available lists.")]
+        [FieldDefinition(1, Label = "Path to list", HelpText = "Path to the list proxied by the Bonarr API. Check the wiki for available lists.")]
         public string Path { get; set; }
 
         public NzbDroneValidationResult Validate()

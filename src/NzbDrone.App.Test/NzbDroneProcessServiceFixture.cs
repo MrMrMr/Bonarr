@@ -3,9 +3,9 @@ using Moq;
 using NUnit.Framework;
 using NzbDrone.Common.Model;
 using NzbDrone.Common.Processes;
-using Radarr.Host;
+using Bonarr.Host;
 using NzbDrone.Test.Common;
-using Radarr.Host;
+using Bonarr.Host;
 
 namespace NzbDrone.App.Test
 {

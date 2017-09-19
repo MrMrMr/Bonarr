@@ -1,4 +1,4 @@
-﻿namespace Radarr.Host.AccessControl
+﻿namespace Bonarr.Host.AccessControl
 {
     public class UrlAcl
     {

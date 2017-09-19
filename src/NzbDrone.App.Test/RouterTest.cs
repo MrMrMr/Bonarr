@@ -3,7 +3,7 @@ using Moq;
 using NUnit.Framework;
 using NzbDrone.Common;
 using NzbDrone.Common.EnvironmentInfo;
-using Radarr.Host;
+using Bonarr.Host;
 using NzbDrone.Test.Common;
 
 namespace NzbDrone.App.Test

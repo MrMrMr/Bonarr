@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -162,7 +162,7 @@ namespace NzbDrone.Core.Download.Clients.DownloadStation
 
         protected override string AddFromNzbFile(RemoteEpisode remoteEpisode, string filename, byte[] fileContent)
         {
-            throw new DownloadClientException("Episodes are not working with Radarr");
+            throw new DownloadClientException("Episodes are not working with Bonarr");
         }
 
         protected override string AddFromNzbFile(RemoteMovie remoteEpisode, string filename, byte[] fileContent)
@@ -259,7 +259,7 @@ namespace NzbDrone.Core.Download.Clients.DownloadStation
                 _logger.Error(ex, ex.Message);
                 return new NzbDroneValidationFailure("Username", "Authentication failure")
                 {
-                    DetailedDescription = $"Please verify your username and password. Also verify if the host running Radarr isn't blocked from accessing {Name} by WhiteList limitations in the {Name} configuration."
+                    DetailedDescription = $"Please verify your username and password. Also verify if the host running Bonarr isn't blocked from accessing {Name} by WhiteList limitations in the {Name} configuration."
                 };
             }
             catch (WebException ex)

@@ -38,12 +38,12 @@ namespace NzbDrone.Core.Download.Clients.UTorrent
 
         protected override string AddFromMagnetLink(RemoteEpisode remoteEpisode, string hash, string magnetLink)
         {
-            throw new DownloadClientException("Episodes are not working with Radarr");
+            throw new DownloadClientException("Episodes are not working with Bonarr");
         }
 
         protected override string AddFromTorrentFile(RemoteEpisode remoteEpisode, string hash, string filename, byte[] fileContent)
         {
-            throw new DownloadClientException("Episodes are not working with Radarr");
+            throw new DownloadClientException("Episodes are not working with Bonarr");
         }
 
         protected override string AddFromMagnetLink(RemoteMovie remoteMovie, string hash, string magnetLink)

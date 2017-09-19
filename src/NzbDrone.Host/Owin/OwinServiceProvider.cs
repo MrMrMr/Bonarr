@@ -9,10 +9,10 @@ using Microsoft.Owin.Hosting.Services;
 using Microsoft.Owin.Hosting.Tracing;
 using NLog;
 using NzbDrone.Core.Configuration;
-using Radarr.Host.Owin.MiddleWare;
+using Bonarr.Host.Owin.MiddleWare;
 using Owin;
 
-namespace Radarr.Host.Owin
+namespace Bonarr.Host.Owin
 {
     public interface IOwinAppFactory
     {

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -7,7 +7,7 @@ using NzbDrone.Common.EnvironmentInfo;
 using NzbDrone.Common.Extensions;
 using NzbDrone.Core.Configuration;
 
-namespace Radarr.Host.AccessControl
+namespace Bonarr.Host.AccessControl
 {
     public interface IUrlAclAdapter
     {

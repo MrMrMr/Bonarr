@@ -15,7 +15,7 @@ namespace NzbDrone.Core.Notifications.Webhook
             _service = service;
         }
 
-        public override string Link => "https://github.com/Radarr/Radarr/wiki/Webhook";
+        public override string Link => "https://github.com/Bonarr/Bonarr/wiki/Webhook";
 
         public override void OnGrab(GrabMessage message)
         {

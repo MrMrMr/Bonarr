@@ -80,7 +80,7 @@ namespace NzbDrone.Update.UpdateEngine
         public void Start(string installationFolder, int processId)
         {
             _logger.Info("Installation Folder: {0}", installationFolder);
-            _logger.Info("Updating Radarr from version {0} to version {1}", _detectExistingVersion.GetExistingVersion(installationFolder), BuildInfo.Version);
+            _logger.Info("Updating Bonarr from version {0} to version {1}", _detectExistingVersion.GetExistingVersion(installationFolder), BuildInfo.Version);
 
             Verify(installationFolder, processId);
 
@@ -103,7 +103,7 @@ namespace NzbDrone.Update.UpdateEngine
                 {
                     if (_processProvider.Exists(ProcessProvider.NZB_DRONE_CONSOLE_PROCESS_NAME) || _processProvider.Exists(ProcessProvider.NZB_DRONE_PROCESS_NAME))
                     {
-                        _logger.Error("Radarr was restarted prematurely by external process.");
+                        _logger.Error("Bonarr was restarted prematurely by external process.");
                         return;
                     }
                 }
@@ -119,12 +119,12 @@ namespace NzbDrone.Update.UpdateEngine
                     // Set executable flag on Sonarr app
                     if (OsInfo.IsOsx)
                     {
-                        _diskProvider.SetPermissions(Path.Combine(installationFolder, "Radarr"), "0755", null, null);
+                        _diskProvider.SetPermissions(Path.Combine(installationFolder, "Bonarr"), "0755", null, null);
                         var plistPath = Path.Combine(installationFolder, "..", "Info.plist");
                         var plistContents = File.ReadAllText(plistPath);
                         if (plistContents.Contains("Sonarr"))
                         {
-                            plistContents.Replace("Sonarr", "Radarr");
+                            plistContents.Replace("Sonarr", "Bonarr");
                             File.WriteAllText(plistPath, plistContents);
                         }
                     }
@@ -153,7 +153,7 @@ namespace NzbDrone.Update.UpdateEngine
 
                         if (_processProvider.Exists(ProcessProvider.NZB_DRONE_PROCESS_NAME))
                         {
-                            _logger.Info("Radarr was restarted by external process.");
+                            _logger.Info("Bonarr was restarted by external process.");
                             break;
                         }
                     }

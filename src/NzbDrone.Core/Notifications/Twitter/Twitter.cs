@@ -21,12 +21,12 @@ namespace NzbDrone.Core.Notifications.Twitter
 
         public override void OnGrab(GrabMessage message)
         {
-            _twitterService.SendNotification($"[Radarr] Grabbed: {message.Message}", Settings);
+            _twitterService.SendNotification($"[Bonarr] Grabbed: {message.Message}", Settings);
         }
 
         public override void OnDownload(DownloadMessage message)
         {
-            _twitterService.SendNotification($"[Radarr] Imported: {message.Message}", Settings);
+            _twitterService.SendNotification($"[Bonarr] Imported: {message.Message}", Settings);
         }
 
         public override void OnMovieRename(Movie movie)

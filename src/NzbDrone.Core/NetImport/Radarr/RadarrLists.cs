@@ -7,11 +7,11 @@ using NzbDrone.Core.ThingiProvider;
 using NzbDrone.Core.MetadataSource;
 
 
-namespace NzbDrone.Core.NetImport.Radarr
+namespace NzbDrone.Core.NetImport.Bonarr
 {
     public class RadarrLists : HttpNetImportBase<RadarrSettings>
     {
-        public override string Name => "Radarr Lists";
+        public override string Name => "Bonarr Lists";
         public override bool Enabled => true;
         public override bool EnableAuto => false;
 

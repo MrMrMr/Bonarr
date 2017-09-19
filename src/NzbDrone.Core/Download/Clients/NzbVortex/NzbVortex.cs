@@ -31,7 +31,7 @@ namespace NzbDrone.Core.Download.Clients.NzbVortex
 
         protected override string AddFromNzbFile(RemoteEpisode remoteEpisode, string filename, byte[] fileContents)
         {
-            throw new DownloadClientException("Episodes are not working with Radarr");
+            throw new DownloadClientException("Episodes are not working with Bonarr");
         }
 
         protected override string AddFromNzbFile(RemoteMovie remoteMovie, string filename, byte[] fileContents)

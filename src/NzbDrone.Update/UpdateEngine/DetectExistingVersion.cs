@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 using NLog;
 
@@ -22,7 +22,7 @@ namespace NzbDrone.Update.UpdateEngine
         {
             try
             {
-                var targetExecutable = Path.Combine(targetFolder, "Radarr.exe");
+                var targetExecutable = Path.Combine(targetFolder, "Bonarr.exe");
 
                 if (File.Exists(targetExecutable))
                 {

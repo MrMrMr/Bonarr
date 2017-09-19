@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -138,12 +138,12 @@ namespace NzbDrone.Core.Download.Clients.Transmission
 
         protected override string AddFromMagnetLink(RemoteEpisode remoteEpisode, string hash, string magnetLink)
         {
-            throw new DownloadClientException("Episodes are not working with Radarr");
+            throw new DownloadClientException("Episodes are not working with Bonarr");
         }
 
         protected override string AddFromTorrentFile(RemoteEpisode remoteEpisode, string hash, string filename, byte[] fileContent)
         {
-            throw new DownloadClientException("Episodes are not working with Radarr");
+            throw new DownloadClientException("Episodes are not working with Bonarr");
         }
 
         protected override string AddFromMagnetLink(RemoteMovie remoteMovie, string hash, string magnetLink)
@@ -200,7 +200,7 @@ namespace NzbDrone.Core.Download.Clients.Transmission
                 _logger.Error(ex, ex.Message);
                 return new NzbDroneValidationFailure("Username", "Authentication failure")
                 {
-                    DetailedDescription = string.Format("Please verify your username and password. Also verify if the host running Radarr isn't blocked from accessing {0} by WhiteList limitations in the {0} configuration.", Name)
+                    DetailedDescription = string.Format("Please verify your username and password. Also verify if the host running Bonarr isn't blocked from accessing {0} by WhiteList limitations in the {0} configuration.", Name)
                 };
             }
             catch (WebException ex)

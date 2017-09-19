@@ -33,7 +33,7 @@ namespace NzbDrone.Core.Download.Clients.Nzbget
 
         protected override string AddFromNzbFile(RemoteEpisode remoteEpisode, string filename, byte[] fileContents)
         {
-            throw new DownloadClientException("Episodes are not working with Radarr");
+            throw new DownloadClientException("Episodes are not working with Bonarr");
         }
 
         protected override string AddFromNzbFile(RemoteMovie remoteMovie, string filename, byte[] fileContents)
@@ -326,7 +326,7 @@ namespace NzbDrone.Core.Download.Clients.Nzbget
                 return new NzbDroneValidationFailure(string.Empty, "NzbGet setting KeepHistory should be greater than 0")
                 {
                     InfoLink = string.Format("http://{0}:{1}/", Settings.Host, Settings.Port),
-                    DetailedDescription = "NzbGet setting KeepHistory is set to 0. Which prevents Radarr from seeing completed downloads."
+                    DetailedDescription = "NzbGet setting KeepHistory is set to 0. Which prevents Bonarr from seeing completed downloads."
                 };
             }
 

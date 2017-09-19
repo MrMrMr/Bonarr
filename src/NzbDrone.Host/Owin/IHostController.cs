@@ -1,4 +1,4 @@
-﻿namespace Radarr.Host.Owin
+﻿namespace Bonarr.Host.Owin
 {
     public interface IHostController
     {

@@ -2,7 +2,7 @@
 using NLog;
 using NzbDrone.Common.Processes;
 
-namespace Radarr.Host.AccessControl
+namespace Bonarr.Host.AccessControl
 {
     public interface INetshProvider
     {

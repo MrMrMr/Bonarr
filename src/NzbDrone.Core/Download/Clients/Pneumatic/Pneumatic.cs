@@ -34,7 +34,7 @@ namespace NzbDrone.Core.Download.Clients.Pneumatic
 
         public override string Download(RemoteEpisode remoteEpisode)
         {
-            throw new DownloadClientException("Episodes are not working with Radarr");
+            throw new DownloadClientException("Episodes are not working with Bonarr");
         }
 
         public override string Download(RemoteMovie remoteMovie)

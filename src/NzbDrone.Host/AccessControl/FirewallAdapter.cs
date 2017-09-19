@@ -1,11 +1,11 @@
-using System;
+﻿using System;
 using System.Linq;
 using NetFwTypeLib;
 using NLog;
 using NzbDrone.Common.EnvironmentInfo;
 using NzbDrone.Core.Configuration;
 
-namespace Radarr.Host.AccessControl
+namespace Bonarr.Host.AccessControl
 {
     public interface IFirewallAdapter
     {

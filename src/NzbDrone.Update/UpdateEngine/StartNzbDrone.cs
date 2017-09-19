@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 using NLog;
 using NzbDrone.Common;
@@ -62,12 +62,12 @@ namespace NzbDrone.Update.UpdateEngine
 
         private void StartWinform(string installationFolder)
         {
-            Start(installationFolder, "Radarr.exe");
+            Start(installationFolder, "Bonarr.exe");
         }
 
         private void StartConsole(string installationFolder)
         {
-            Start(installationFolder, "Radarr.Console.exe");
+            Start(installationFolder, "Bonarr.Console.exe");
         }
 
         private void Start(string installationFolder, string fileName)
