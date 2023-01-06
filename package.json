@@ -36,7 +36,7 @@
     "gulp-webpack": "1.5.0",
     "gulp-wrap": "0.11.0",
     "handlebars": "3.0.3",
-    "jshint-loader": "0.8.3",
+    "jshint-loader": "0.8.4",
     "jshint-stylish": "2.0.1",
     "run-sequence": "1.1.1",
     "streamqueue": "1.1.0",
